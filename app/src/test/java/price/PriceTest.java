@@ -5,8 +5,7 @@ import static org.junit.Assert.*;
 public class PriceTest {
 	@Test
 	public void testGoSwim1() {
-		Price p = new Price();
-		assertEquals(1, p.goSwim(true));
+		assertEquals(1, new Price().goSwim(true));
 	}
 	
 	
