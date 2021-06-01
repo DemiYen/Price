@@ -18,29 +18,8 @@ public class Price {
 		this.studentQ = studentQ;
 	}
 
-	public int goSwim() {
-		int PRICE = 0;
-		
-		if(coach == false) {
-			PRICE = 200 * people;
-		}else{
-			if(people < 10) {
-				PRICE = (timeOut - timeIn) * 3000;
-			}else{
-				if(timeInterval.equals("A")) {
-					PRICE = (120 * coachQ) + (70 * studentQ);
-				}else if(timeInterval.equals("AB")) {
-					PRICE = ((120 * coachQ) + (70 * studentQ)) * 2;
-				}else if(timeInterval.equals("ABC")) {
-					PRICE = ((120 * coachQ) + (70 * studentQ)) * 3;
-				}else if(timeInterval.equals("ABCD")) {
-					PRICE = ((120 * coachQ) + (70 * studentQ)) * 4;
-				}else {
-					PRICE = 0;
-				}
-			}
-		}	
-		return PRICE;
+	public String goSwim() {
+		return "HelloWorld";
 	}
 	
 }
