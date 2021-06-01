@@ -5,12 +5,9 @@ import static org.junit.Assert.*;
 public class PriceTest {
 	@Test
 	public void testGoSwim1() {
-		assertEquals(1, new Price().goSwim(true));
+		Price p = new Price(false, 8, 9, null, 10, 0, 10);
+		assertEquals(2000, p.goSwim());
 	}
 	
-	@Test
-	public void testGoSwim2() {
-		assertEquals(0, new Price().goSwim(false));
-	}
 
 }
