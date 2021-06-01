@@ -8,6 +8,9 @@ public class PriceTest {
 		assertEquals(1, new Price().goSwim(true));
 	}
 	
-	
+	@Test
+	public void testGoSwim2() {
+		assertEquals(0, new Price().goSwim(false));
+	}
 
 }
