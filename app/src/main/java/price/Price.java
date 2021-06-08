@@ -8,9 +8,9 @@ public class Price {
 					String timeInterval, int people, int coachQ, int studentQ) {
 		int price = 0;
 		
-		if(!coach) {
+		if(coach == false) {
 			price = 200 * people;
-		}else{
+		}else if(coach == true) {
 			if(people < 10) {
 				price = (timeOut - timeIn) * 3000;
 			}else if(people >= 10) {
@@ -34,7 +34,7 @@ public class Price {
 					price = ((120 * coachQ) + (70 * studentQ)) * 5;
 				}
 			}
-		}
+		}	
 		return price;
 	}
 	
